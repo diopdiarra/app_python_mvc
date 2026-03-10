@@ -21,4 +21,5 @@ class InterfaceContentsDTO:
     message_until: float 
     input_buffer: str
     display_mode: str
-    frame_end : str
+    frame_end_uart0 : str
+    frame_end_uart1 : str

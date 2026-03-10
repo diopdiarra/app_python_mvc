@@ -63,7 +63,7 @@ DEFAULT_FRAME_END ="CRLF"
 class SpyDeviceConfigUART:
     """ 
     """
-    def __init__(self, baud : str = None, bits : str = None, parity : str = None, stopbits : str = None, frame_end: str = "CRLF")-> None:
+    def __init__(self, baud : str = None, bits : str = None, parity : str = None, stopbits : str = None, frame_end_uart0: str = "CRLF", frame_end_uart1: str = "CRLF")-> None:
         """
         Initialise une configuration UART
 
@@ -78,7 +78,8 @@ class SpyDeviceConfigUART:
         self.bits = bits or DEFAULT_BYTES_SIZE
         self.parity = parity or DEFAULT_PARITY 
         self.stopbits = stopbits or DEFAULT_STOP_BITS
-        self.frame_end = frame_end or DEFAULT_FRAME_END
+        self.frame_end_uart0 = frame_end_uart0 or DEFAULT_FRAME_END
+        self.frame_end_uart1 = frame_end_uart1 or DEFAULT_FRAME_END
         
         
     def __repr__(self) ->str:
@@ -88,7 +89,7 @@ class SpyDeviceConfigUART:
         Returns:
             str:Chaine représentant la configuration UART actuelle
         """
-        return f"{self._baud} {self._bits} {self._parity} {self._stopbits} {self._frame_end}"
+        return f"{self._baud} {self._bits} {self._parity} {self._stopbits} {self._frame_end_uart0} {self._frame_end_uart1}"
 
     
     def build_set_command_frame(self)->bytes:
@@ -106,9 +107,10 @@ class SpyDeviceConfigUART:
             bits_code = BYTESIZE[self._bits]
             parity_code = PARITY[self._parity]
             stop_code = STOPBITS[self._stopbits]
-            frame_end = FRAME_END[self.frame_end]
+            frame_end_uart0 = FRAME_END[self.frame_end_uart0]
+            frame_end_uart1 = FRAME_END[self.frame_end_uart1]
 
-            params = baud_code + bits_code+ parity_code + stop_code + frame_end
+            params = baud_code + bits_code+ parity_code + stop_code + frame_end_uart0 + frame_end_uart1
 
             return build_frame(CMD_SET, params)
         
@@ -224,17 +226,17 @@ class SpyDeviceConfigUART:
             raise ValueError(f"nombre de bits de stop invalide")
     
     @property
-    def frame_end(self) -> str:
+    def frame_end_uart0(self) -> str:
         """
         Type de fin de trame utilisé pour les données à capturer
 
         Returns:
             str: Fin de trame choisi
         """
-        return self._frame_end
+        return self._frame_end_uart0
 
-    @frame_end.setter
-    def frame_end(self, value: str)-> None:
+    @frame_end_uart0.setter
+    def frame_end_uart0(self, value: str)-> None:
         """
         Définit la validité du type de fin de trame choisi.
 
@@ -246,10 +248,37 @@ class SpyDeviceConfigUART:
         """
         value = value.upper()
         if value in FRAME_END_CODES:
-            self._frame_end = value
+            self._frame_end_uart0 = value
         else:
-            raise ValueError("fin de trame invalide (LF / CR / CRLF)")
+            raise ValueError("fin de trame uart0 invalide (LF / CR / CRLF)")
     
+    
+    @property
+    def frame_end_uart1(self) -> str:
+        """
+        Type de fin de trame utilisé pour les données à capturer
+
+        Returns:
+            str: Fin de trame choisi
+        """
+        return self._frame_end_uart1
+
+    @frame_end_uart1.setter
+    def frame_end_uart1(self, value: str)-> None:
+        """
+        Définit la validité du type de fin de trame choisi.
+
+        Args:
+            value (str):Type de fin de trame
+
+        Raises:
+            ValueError: Si la valeur est invalide
+        """
+        value = value.upper()
+        if value in FRAME_END_CODES:
+            self._frame_end_uart1 = value
+        else:
+            raise ValueError("fin de trame uart1 invalide (LF / CR / CRLF)")
        
 
 

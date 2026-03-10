@@ -76,9 +76,11 @@ class AppControler:
         bits = uart["bits"]
         parity = uart["parity"]
         stopbits = uart["stopbits"]
-        frame_end = uart["frame_end"]
+        frame_end_uart0 = uart["frame_end_uart0"]
+        frame_end_uart1 = uart["frame_end_uart1"]
 
-        cmd = f"set {baud} {bits} {parity} {stopbits} {frame_end}"
+
+        cmd = f"set {baud} {bits} {parity} {stopbits} {frame_end_uart0} {frame_end_uart1}"
 
         set_cmd(self, cmd)
 
@@ -102,16 +104,17 @@ class AppControler:
             self._model.send_frame(build_frame(CMD_STOP))
             parts = (self._view.context.config or "").split()
             if len(parts) == 5:
-                baud, bits, parity, stopbits, frame_end, = parts
+                baud, bits, parity, stopbits, frame_end_uart0, frame_end_uart1, = parts
             else:
-                baud, bits, parity, stopbits , frame_end,= "115200", "8", "N", "1", "CRLF"
+                baud, bits, parity, stopbits , frame_end_uart0, frame_end_uart1= "115200", "8", "N", "1", "CRLF","CRLF"
 
             settings_dict = {
                 "baud": baud,
                 "bits": bits,
                 "parity": parity,
                 "stopbits": stopbits,
-                "frame_end": frame_end
+                "frame_end_uart0": frame_end_uart0,
+                "frame_end_uart1" : frame_end_uart1
             }
             save_settings(self._view.context.filter, self._view.context.display_mode, settings_dict)
             self._model.stop_listener()

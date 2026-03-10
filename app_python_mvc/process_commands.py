@@ -101,7 +101,7 @@ def set_cmd(self, command:str)->None:
     if len(parts) < 2:
         set_message(
             self._view,
-            "Usage: set <baud> [bits] [stop] [parité] [fin de trame]",
+            "Usage: set <baud> [bits] [stop] [parité] [fin de trame uart0] [fin de trame uart1]",
             seconds=3.0
         )
         return

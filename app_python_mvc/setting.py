@@ -24,7 +24,8 @@ DEFAULTS = {
         "bits": "8",
         "parity": "N",
         "stopbits": "1",
-        "frame_end": "CRLF",  
+        "frame_end_uart0": "CRLF",  
+        "frame_end_uart1": "CRLF",
     },
 }
 
@@ -66,7 +67,8 @@ def save_settings(filter_value: str, display_mode: str, uart: dict) -> None:
             "bits": uart.get("bits", DEFAULTS["uart"]["bits"]),
             "parity": uart.get("parity", DEFAULTS["uart"]["parity"]),
             "stopbits": uart.get("stopbits", DEFAULTS["uart"]["stopbits"]),
-            "frame_end": uart.get("frame_end", DEFAULTS["uart"]["frame_end"]), 
+            "frame_end_uart0": uart.get("frame_end_uart0", DEFAULTS["uart"]["frame_end_uart0"]), 
+            "frame_end_uart1": uart.get("frame_end_uart1", DEFAULTS["uart"]["frame_end_uart1"]),
     }
     }
 

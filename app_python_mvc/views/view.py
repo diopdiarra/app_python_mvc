@@ -37,8 +37,9 @@ class AppView:
         self.on_submit = Signal()
         s = load_settings()
         uart = s["uart"]
-        frame_end = uart.get("frame_end", "LF")
-        config_str = f'{uart["baud"]} {uart["bits"]} {uart["parity"]} {uart["stopbits"]} {frame_end}'
+        frame_end_uart0 = uart.get("frame_end_uart0", "CRLF")
+        frame_end_uart1 = uart.get("frame_end_uart1", "CRLF")
+        config_str = f'{uart["baud"]} {uart["bits"]} {uart["parity"]} {uart["stopbits"]} {frame_end_uart0} {frame_end_uart1}'
 
         self.context = InterfaceContentsDTO(
                                               trace=[],
@@ -51,7 +52,8 @@ class AppView:
                                               message_until=0.0,
                                               input_buffer="",
                                               display_mode=s["display_mode"],
-                                              frame_end=frame_end
+                                              frame_end_uart0 =frame_end_uart0,
+                                              frame_end_uart1= frame_end_uart1
                                               )
 
     def init(self, stdscr)->None:
