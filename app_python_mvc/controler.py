@@ -103,7 +103,7 @@ class AppControler:
         finally:
             self._model.send_frame(build_frame(CMD_STOP))
             parts = (self._view.context.config or "").split()
-            if len(parts) == 5:
+            if len(parts) == 6:
                 baud, bits, parity, stopbits, frame_end_uart0, frame_end_uart1, = parts
             else:
                 baud, bits, parity, stopbits , frame_end_uart0, frame_end_uart1= "115200", "8", "N", "1", "CRLF","CRLF"
