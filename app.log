@@ -635,3 +635,274 @@ AttributeError: 'AppModel' object has no attribute '_view'
 2026-03-10 11:04:11,942 [app_python_mvc.process_commands] INFO: trame STOP envoyée : b'#2\r\n'
 2026-03-10 11:04:11,942 [app_python_mvc.models.model] INFO: trame envoyé :b'#2\r\n'
 2026-03-10 11:04:11,943 [app_python_mvc.models.listener] INFO: réponse commande : cmd=b'2' success=True
+2026-03-11 11:01:26,494 [uart_spy] INFO: Démarrage application (port=/dev/ttyACM1, baud=460800)
+2026-03-11 11:01:26,510 [app_python_mvc.models.model] INFO: trame envoyé :b'#P\r\n'
+2026-03-11 11:01:26,511 [app_python_mvc.models.listener] INFO: réponse commande : cmd=b'P' success=True
+2026-03-11 11:01:26,511 [app_python_mvc.process_commands] INFO: trame SET envoyée : b'#3g8N1E1E2\r\n'
+2026-03-11 11:01:26,511 [app_python_mvc.models.model] INFO: trame envoyé :b'#3g8N1E1E2\r\n'
+2026-03-11 11:01:26,511 [app_python_mvc.models.listener] INFO: réponse commande : cmd=b'3' success=True
+2026-03-11 11:01:36,444 [app_python_mvc.controler] INFO: commande recupéré 
+2026-03-11 11:01:36,444 [app_python_mvc.controler] INFO: commande = start
+2026-03-11 11:01:36,444 [app_python_mvc.process_commands] INFO: trame START envoyée : b'#1\r\n'
+2026-03-11 11:01:36,445 [app_python_mvc.models.model] INFO: trame envoyé :b'#1\r\n'
+2026-03-11 11:01:36,445 [app_python_mvc.models.listener] INFO: réponse commande : cmd=b'1' success=True
+2026-03-11 11:01:41,211 [app_python_mvc.controler] INFO: commande recupéré 
+2026-03-11 11:02:22,378 [app_python_mvc.controler] INFO: commande recupéré 
+2026-03-11 11:02:22,379 [app_python_mvc.controler] INFO: commande = stop
+2026-03-11 11:02:22,379 [app_python_mvc.process_commands] INFO: trame STOP envoyée : b'#2\r\n'
+2026-03-11 11:02:22,380 [app_python_mvc.models.listener] INFO: réponse commande : cmd=b'2' success=True
+2026-03-11 11:02:22,380 [app_python_mvc.models.model] INFO: trame envoyé :b'#2\r\n'
+2026-03-11 11:02:38,330 [app_python_mvc.controler] INFO: commande recupéré 
+2026-03-11 11:02:38,330 [app_python_mvc.process_commands] INFO: trame SET envoyée : b'#3g8N1E2E1\r\n'
+2026-03-11 11:02:38,331 [app_python_mvc.models.model] INFO: trame envoyé :b'#3g8N1E2E1\r\n'
+2026-03-11 11:02:38,331 [app_python_mvc.models.listener] INFO: réponse commande : cmd=b'3' success=True
+2026-03-11 11:03:25,513 [app_python_mvc.controler] INFO: commande recupéré 
+2026-03-11 11:03:25,513 [app_python_mvc.controler] INFO: commande = start
+2026-03-11 11:03:25,513 [app_python_mvc.process_commands] INFO: trame START envoyée : b'#1\r\n'
+2026-03-11 11:03:25,514 [app_python_mvc.models.model] INFO: trame envoyé :b'#1\r\n'
+2026-03-11 11:03:25,514 [app_python_mvc.models.listener] INFO: réponse commande : cmd=b'1' success=True
+2026-03-11 11:03:30,441 [app_python_mvc.controler] INFO: commande recupéré 
+2026-03-11 11:03:30,441 [app_python_mvc.controler] INFO: commande = stop
+2026-03-11 11:03:30,441 [app_python_mvc.process_commands] INFO: trame STOP envoyée : b'#2\r\n'
+2026-03-11 11:03:30,442 [app_python_mvc.models.model] INFO: trame envoyé :b'#2\r\n'
+2026-03-11 11:03:30,442 [app_python_mvc.models.listener] INFO: réponse commande : cmd=b'2' success=True
+2026-03-11 11:03:39,640 [app_python_mvc.controler] INFO: commande recupéré 
+2026-03-11 11:03:39,641 [app_python_mvc.process_commands] INFO: trame SET envoyée : b'#3g8N1E1E2\r\n'
+2026-03-11 11:03:39,641 [app_python_mvc.models.listener] INFO: réponse commande : cmd=b'3' success=True
+2026-03-11 11:03:39,642 [app_python_mvc.models.model] INFO: trame envoyé :b'#3g8N1E1E2\r\n'
+2026-03-11 11:03:42,072 [app_python_mvc.controler] INFO: commande recupéré 
+2026-03-11 11:03:42,073 [app_python_mvc.controler] INFO: commande = start
+2026-03-11 11:03:42,073 [app_python_mvc.process_commands] INFO: trame START envoyée : b'#1\r\n'
+2026-03-11 11:03:42,073 [app_python_mvc.models.model] INFO: trame envoyé :b'#1\r\n'
+2026-03-11 11:03:42,074 [app_python_mvc.models.listener] INFO: réponse commande : cmd=b'1' success=True
+2026-03-11 11:03:50,856 [app_python_mvc.controler] INFO: commande recupéré 
+2026-03-11 11:03:50,856 [app_python_mvc.controler] INFO: commande = stop
+2026-03-11 11:03:50,856 [app_python_mvc.process_commands] INFO: trame STOP envoyée : b'#2\r\n'
+2026-03-11 11:03:50,857 [app_python_mvc.models.model] INFO: trame envoyé :b'#2\r\n'
+2026-03-11 11:03:50,857 [app_python_mvc.models.listener] INFO: réponse commande : cmd=b'2' success=True
+2026-03-11 13:31:36,381 [app_python_mvc.models.model] WARNING: Connexion série perdue : write failed: [Errno 5] Input/output error
+2026-03-11 13:31:37,207 [uart_spy] ERROR: Erreur inattendue
+Traceback (most recent call last):
+  File "/home/diarra/DevPython/app_python_mvc/app_python_mvc/controler.py", line 102, in run
+    curses.wrapper(self._ui_loop)
+  File "/usr/lib/python3.12/curses/__init__.py", line 94, in wrapper
+    return func(stdscr, *args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/diarra/DevPython/app_python_mvc/app_python_mvc/controler.py", line 145, in _ui_loop
+    self._view.step(stdscr)
+  File "/home/diarra/DevPython/app_python_mvc/app_python_mvc/views/view.py", line 92, in step
+    redraw_interface(stdscr, self.context)
+  File "/home/diarra/DevPython/app_python_mvc/app_python_mvc/views/ui_draw.py", line 110, in redraw_interface
+    stdscr.refresh()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/serial/serialposix.py", line 621, in write
+    n = os.write(self.fd, d)
+        ^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 5] Input/output error
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/diarra/DevPython/app_python_mvc/app_python_mvc/models/model.py", line 82, in send_frame
+    self._ser.write(frame)
+  File "/usr/lib/python3/dist-packages/serial/serialposix.py", line 655, in write
+    raise SerialException('write failed: {}'.format(e))
+serial.serialutil.SerialException: write failed: [Errno 5] Input/output error
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/diarra/DevPython/app_python_mvc/app_python_mvc/__main__.py", line 126, in run_app
+    controller.run()
+  File "/home/diarra/DevPython/app_python_mvc/app_python_mvc/controler.py", line 104, in run
+    self._model.send_frame(build_frame(CMD_STOP))
+  File "/home/diarra/DevPython/app_python_mvc/app_python_mvc/models/model.py", line 87, in send_frame
+    set_message(self._view, "Connexion perdue. Veuillez relancer l'application.y", seconds=2.0)
+                ^^^^^^^^^^
+AttributeError: 'AppModel' object has no attribute '_view'
+2026-03-11 13:31:45,648 [uart_spy] INFO: Démarrage application (port=/dev/ttyACM2, baud=460800)
+2026-03-11 13:31:45,649 [app_python_mvc.models.model] INFO: trame envoyé :b'#P\r\n'
+2026-03-11 13:31:45,649 [app_python_mvc.models.listener] INFO: réponse commande : cmd=b'P' success=True
+2026-03-11 13:31:45,649 [app_python_mvc.process_commands] INFO: trame SET envoyée : b'#3g8N1E1E2\r\n'
+2026-03-11 13:31:45,650 [app_python_mvc.models.model] INFO: trame envoyé :b'#3g8N1E1E2\r\n'
+2026-03-11 13:31:45,650 [app_python_mvc.models.listener] INFO: réponse commande : cmd=b'3' success=True
+2026-03-11 13:31:48,925 [app_python_mvc.controler] INFO: commande recupéré 
+2026-03-11 13:31:48,925 [app_python_mvc.controler] INFO: commande = start
+2026-03-11 13:31:48,925 [app_python_mvc.process_commands] INFO: trame START envoyée : b'#1\r\n'
+2026-03-11 13:31:48,925 [app_python_mvc.models.model] INFO: trame envoyé :b'#1\r\n'
+2026-03-11 13:31:48,926 [app_python_mvc.models.listener] INFO: réponse commande : cmd=b'1' success=True
+2026-03-11 13:32:31,236 [app_python_mvc.controler] INFO: commande recupéré 
+2026-03-11 13:32:31,236 [app_python_mvc.controler] INFO: commande = stop
+2026-03-11 13:32:31,236 [app_python_mvc.process_commands] INFO: trame STOP envoyée : b'#2\r\n'
+2026-03-11 13:32:31,236 [app_python_mvc.models.model] INFO: trame envoyé :b'#2\r\n'
+2026-03-11 13:32:31,237 [app_python_mvc.models.listener] INFO: réponse commande : cmd=b'2' success=True
+2026-03-11 13:32:34,952 [app_python_mvc.controler] INFO: commande recupéré 
+2026-03-11 13:32:34,952 [app_python_mvc.controler] INFO: commande = start
+2026-03-11 13:32:34,952 [app_python_mvc.process_commands] INFO: trame START envoyée : b'#1\r\n'
+2026-03-11 13:32:34,953 [app_python_mvc.models.model] INFO: trame envoyé :b'#1\r\n'
+2026-03-11 13:32:34,953 [app_python_mvc.models.listener] INFO: réponse commande : cmd=b'1' success=True
+2026-03-11 13:33:02,537 [app_python_mvc.controler] INFO: commande recupéré 
+2026-03-11 13:33:02,537 [app_python_mvc.controler] INFO: commande = stop
+2026-03-11 13:33:02,537 [app_python_mvc.process_commands] INFO: trame STOP envoyée : b'#2\r\n'
+2026-03-11 13:33:02,538 [app_python_mvc.models.model] INFO: trame envoyé :b'#2\r\n'
+2026-03-11 13:33:02,538 [app_python_mvc.models.listener] INFO: réponse commande : cmd=b'2' success=True
+2026-03-11 13:33:08,089 [app_python_mvc.controler] INFO: commande recupéré 
+2026-03-11 13:33:08,089 [app_python_mvc.controler] INFO: commande = start
+2026-03-11 13:33:08,089 [app_python_mvc.process_commands] INFO: trame START envoyée : b'#1\r\n'
+2026-03-11 13:33:08,090 [app_python_mvc.models.model] INFO: trame envoyé :b'#1\r\n'
+2026-03-11 13:33:08,090 [app_python_mvc.models.listener] INFO: réponse commande : cmd=b'1' success=True
+2026-03-11 13:33:23,543 [app_python_mvc.controler] INFO: commande recupéré 
+2026-03-11 13:33:23,543 [app_python_mvc.controler] INFO: commande = stop
+2026-03-11 13:33:23,543 [app_python_mvc.process_commands] INFO: trame STOP envoyée : b'#2\r\n'
+2026-03-11 13:33:23,543 [app_python_mvc.models.model] INFO: trame envoyé :b'#2\r\n'
+2026-03-11 13:33:23,543 [app_python_mvc.models.listener] INFO: réponse commande : cmd=b'2' success=True
+2026-03-11 13:33:25,795 [app_python_mvc.controler] INFO: commande recupéré 
+2026-03-11 13:33:25,795 [app_python_mvc.controler] INFO: commande = start
+2026-03-11 13:33:25,796 [app_python_mvc.process_commands] INFO: trame START envoyée : b'#1\r\n'
+2026-03-11 13:33:25,796 [app_python_mvc.models.model] INFO: trame envoyé :b'#1\r\n'
+2026-03-11 13:33:25,796 [app_python_mvc.models.listener] INFO: réponse commande : cmd=b'1' success=True
+2026-03-11 13:34:20,379 [app_python_mvc.controler] INFO: commande recupéré 
+2026-03-11 13:34:20,380 [app_python_mvc.controler] INFO: commande = stop
+2026-03-11 13:34:20,380 [app_python_mvc.process_commands] INFO: trame STOP envoyée : b'#2\r\n'
+2026-03-11 13:34:20,380 [app_python_mvc.models.model] INFO: trame envoyé :b'#2\r\n'
+2026-03-11 13:34:20,381 [app_python_mvc.models.listener] INFO: réponse commande : cmd=b'2' success=True
+2026-03-11 13:34:49,771 [app_python_mvc.controler] INFO: commande recupéré 
+2026-03-11 13:34:49,772 [app_python_mvc.controler] INFO: commande = start
+2026-03-11 13:34:49,772 [app_python_mvc.process_commands] INFO: trame START envoyée : b'#1\r\n'
+2026-03-11 13:34:49,772 [app_python_mvc.models.model] INFO: trame envoyé :b'#1\r\n'
+2026-03-11 13:34:49,773 [app_python_mvc.models.listener] INFO: réponse commande : cmd=b'1' success=True
+2026-03-11 13:34:52,580 [app_python_mvc.controler] INFO: commande recupéré 
+2026-03-11 13:34:52,580 [app_python_mvc.controler] INFO: commande = stop
+2026-03-11 13:34:52,580 [app_python_mvc.process_commands] INFO: trame STOP envoyée : b'#2\r\n'
+2026-03-11 13:34:52,581 [app_python_mvc.models.model] INFO: trame envoyé :b'#2\r\n'
+2026-03-11 13:34:52,581 [app_python_mvc.models.listener] INFO: réponse commande : cmd=b'2' success=True
+2026-03-11 13:34:55,260 [app_python_mvc.controler] INFO: commande recupéré 
+2026-03-11 13:34:55,260 [app_python_mvc.controler] INFO: commande = start
+2026-03-11 13:34:55,260 [app_python_mvc.process_commands] INFO: trame START envoyée : b'#1\r\n'
+2026-03-11 13:34:55,261 [app_python_mvc.models.model] INFO: trame envoyé :b'#1\r\n'
+2026-03-11 13:34:55,261 [app_python_mvc.models.listener] INFO: réponse commande : cmd=b'1' success=True
+2026-03-11 13:35:09,036 [app_python_mvc.controler] INFO: commande recupéré 
+2026-03-11 13:35:09,036 [app_python_mvc.controler] INFO: commande = stop
+2026-03-11 13:35:09,036 [app_python_mvc.process_commands] INFO: trame STOP envoyée : b'#2\r\n'
+2026-03-11 13:35:09,037 [app_python_mvc.models.model] INFO: trame envoyé :b'#2\r\n'
+2026-03-11 13:35:09,037 [app_python_mvc.models.listener] INFO: réponse commande : cmd=b'2' success=True
+2026-03-11 13:35:29,378 [app_python_mvc.models.model] INFO: trame envoyé :b'#2\r\n'
+2026-03-11 13:35:29,379 [app_python_mvc.models.listener] INFO: réponse commande : cmd=b'2' success=False
+2026-03-11 13:35:29,395 [uart_spy] INFO: Arrêt application (Ctrl+C).
+2026-03-11 15:09:53,384 [uart_spy] INFO: Démarrage application (port=/dev/ttyACM0, baud=460800)
+2026-03-11 15:09:53,401 [app_python_mvc.models.model] INFO: trame envoyé :b'#P\r\n'
+2026-03-11 15:09:53,401 [app_python_mvc.models.listener] INFO: réponse commande : cmd=b'P' success=True
+2026-03-11 15:09:53,401 [app_python_mvc.process_commands] INFO: trame SET envoyée : b'#3g8N1E1E2\r\n'
+2026-03-11 15:09:53,402 [app_python_mvc.models.model] INFO: trame envoyé :b'#3g8N1E1E2\r\n'
+2026-03-11 15:09:53,402 [app_python_mvc.models.listener] INFO: réponse commande : cmd=b'3' success=True
+2026-03-12 09:49:57,455 [uart_spy] INFO: Démarrage application (port=/dev/ttyACM0, baud=460800)
+2026-03-12 09:49:57,456 [app_python_mvc.models.model] INFO: trame envoyé :b'#P\r\n'
+2026-03-12 09:49:57,456 [app_python_mvc.models.listener] INFO: réponse commande : cmd=b'P' success=True
+2026-03-12 09:49:57,456 [app_python_mvc.process_commands] INFO: trame SET envoyée : b'#3g8N1E1E2\r\n'
+2026-03-12 09:49:57,456 [app_python_mvc.models.model] INFO: trame envoyé :b'#3g8N1E1E2\r\n'
+2026-03-12 09:49:57,457 [app_python_mvc.models.listener] INFO: réponse commande : cmd=b'3' success=True
+2026-03-12 09:50:04,385 [app_python_mvc.controler] INFO: commande recupéré 
+2026-03-12 09:50:04,386 [app_python_mvc.controler] INFO: commande = start
+2026-03-12 09:50:04,386 [app_python_mvc.process_commands] INFO: trame START envoyée : b'#1\r\n'
+2026-03-12 09:50:04,386 [app_python_mvc.models.model] INFO: trame envoyé :b'#1\r\n'
+2026-03-12 09:50:04,387 [app_python_mvc.models.listener] INFO: réponse commande : cmd=b'1' success=True
+2026-03-12 09:50:11,842 [app_python_mvc.controler] INFO: commande recupéré 
+2026-03-12 09:50:11,842 [app_python_mvc.controler] INFO: commande = stop
+2026-03-12 09:50:11,842 [app_python_mvc.process_commands] INFO: trame STOP envoyée : b'#2\r\n'
+2026-03-12 09:50:11,843 [app_python_mvc.models.model] INFO: trame envoyé :b'#2\r\n'
+2026-03-12 09:50:11,843 [app_python_mvc.models.listener] INFO: réponse commande : cmd=b'2' success=True
+2026-03-12 09:52:09,222 [app_python_mvc.controler] INFO: commande recupéré 
+2026-03-12 09:52:09,222 [app_python_mvc.controler] INFO: commande = start
+2026-03-12 09:52:09,222 [app_python_mvc.process_commands] INFO: trame START envoyée : b'#1\r\n'
+2026-03-12 09:52:09,223 [app_python_mvc.models.model] INFO: trame envoyé :b'#1\r\n'
+2026-03-12 09:52:09,224 [app_python_mvc.models.listener] INFO: réponse commande : cmd=b'1' success=True
+2026-03-12 09:53:34,935 [app_python_mvc.controler] INFO: commande recupéré 
+2026-03-12 09:53:34,935 [app_python_mvc.controler] INFO: commande = stop
+2026-03-12 09:53:34,935 [app_python_mvc.process_commands] INFO: trame STOP envoyée : b'#2\r\n'
+2026-03-12 09:53:34,935 [app_python_mvc.models.model] INFO: trame envoyé :b'#2\r\n'
+2026-03-12 09:53:34,935 [app_python_mvc.models.listener] INFO: réponse commande : cmd=b'2' success=True
+2026-03-12 13:26:58,310 [app_python_mvc.controler] INFO: commande recupéré 
+2026-03-12 13:26:58,530 [app_python_mvc.controler] INFO: commande = start
+2026-03-12 13:26:58,580 [app_python_mvc.process_commands] INFO: trame START envoyée : b'#1\r\n'
+2026-03-12 13:26:58,729 [app_python_mvc.models.model] INFO: trame envoyé :b'#1\r\n'
+2026-03-12 13:26:58,799 [app_python_mvc.models.listener] INFO: réponse commande : cmd=b'1' success=True
+2026-03-12 13:28:42,720 [app_python_mvc.controler] INFO: commande recupéré 
+2026-03-12 13:28:46,465 [app_python_mvc.controler] INFO: commande recupéré 
+2026-03-12 13:28:50,864 [app_python_mvc.controler] INFO: commande recupéré 
+2026-03-12 13:28:50,865 [app_python_mvc.controler] INFO: commande = start
+2026-03-12 13:28:50,865 [app_python_mvc.process_commands] INFO: trame START envoyée : b'#1\r\n'
+2026-03-12 13:28:50,865 [app_python_mvc.models.model] INFO: trame envoyé :b'#1\r\n'
+2026-03-12 13:28:50,866 [app_python_mvc.models.listener] INFO: réponse commande : cmd=b'1' success=False
+2026-03-12 13:28:56,736 [app_python_mvc.controler] INFO: commande recupéré 
+2026-03-12 13:28:56,736 [app_python_mvc.controler] INFO: commande = stop
+2026-03-12 13:28:56,737 [app_python_mvc.process_commands] INFO: trame STOP envoyée : b'#2\r\n'
+2026-03-12 13:28:56,737 [app_python_mvc.models.model] INFO: trame envoyé :b'#2\r\n'
+2026-03-12 13:28:56,738 [app_python_mvc.models.listener] INFO: réponse commande : cmd=b'2' success=True
+2026-03-12 13:29:07,184 [app_python_mvc.controler] INFO: commande recupéré 
+2026-03-12 13:29:09,311 [app_python_mvc.controler] INFO: commande recupéré 
+2026-03-12 13:29:14,352 [app_python_mvc.controler] INFO: commande recupéré 
+2026-03-12 13:29:17,392 [app_python_mvc.controler] INFO: commande recupéré 
+2026-03-12 13:29:29,493 [app_python_mvc.controler] INFO: commande recupéré 
+2026-03-12 13:29:35,360 [app_python_mvc.controler] INFO: commande recupéré 
+2026-03-12 13:33:00,654 [app_python_mvc.controler] INFO: commande recupéré 
+2026-03-12 13:33:00,741 [app_python_mvc.process_commands] INFO: trame SET envoyée : b'#3g8N1E3E3\r\n'
+2026-03-12 13:33:00,742 [app_python_mvc.models.model] INFO: trame envoyé :b'#3g8N1E3E3\r\n'
+2026-03-12 13:33:00,743 [app_python_mvc.models.listener] INFO: réponse commande : cmd=b'3' success=True
+2026-03-12 13:37:44,681 [app_python_mvc.models.model] INFO: trame envoyé :b'#2\r\n'
+2026-03-12 13:37:44,698 [app_python_mvc.models.listener] INFO: réponse commande : cmd=b'2' success=False
+2026-03-12 13:37:46,337 [uart_spy] INFO: Arrêt application (Ctrl+C).
+2026-03-12 13:38:02,470 [uart_spy] INFO: Démarrage application (port=/dev/ttyACM1, baud=460800)
+2026-03-12 13:38:02,474 [app_python_mvc.models.model] INFO: trame envoyé :b'#P\r\n'
+2026-03-12 13:39:21,532 [app_python_mvc.models.model] INFO: trame envoyé :b'#2\r\n'
+2026-03-12 13:39:21,536 [uart_spy] INFO: Arrêt application (Ctrl+C).
+2026-03-12 13:39:22,802 [uart_spy] INFO: Démarrage application (port=/dev/ttyACM1, baud=460800)
+2026-03-12 13:39:22,803 [app_python_mvc.models.model] INFO: trame envoyé :b'#P\r\n'
+2026-03-12 13:42:28,419 [app_python_mvc.models.model] INFO: trame envoyé :b'#2\r\n'
+2026-03-12 13:42:28,423 [uart_spy] INFO: Arrêt application (Ctrl+C).
+2026-03-12 13:42:36,951 [uart_spy] INFO: Démarrage application (port=/dev/ttyACM1, baud=460800)
+2026-03-12 13:42:36,953 [app_python_mvc.models.model] INFO: trame envoyé :b'#P\r\n'
+2026-03-12 13:42:44,105 [app_python_mvc.controler] INFO: commande = stop
+2026-03-12 13:42:44,105 [app_python_mvc.process_commands] INFO: trame STOP envoyée : b'#2\r\n'
+2026-03-12 13:42:44,105 [app_python_mvc.models.model] INFO: trame envoyé :b'#2\r\n'
+2026-03-12 13:43:00,379 [app_python_mvc.models.model] INFO: trame envoyé :b'#2\r\n'
+2026-03-12 13:43:00,382 [uart_spy] INFO: Arrêt application (Ctrl+C).
+2026-03-12 13:43:01,448 [uart_spy] INFO: Démarrage application (port=/dev/ttyACM1, baud=460800)
+2026-03-12 13:43:01,449 [app_python_mvc.models.model] INFO: trame envoyé :b'#P\r\n'
+2026-03-12 13:43:54,500 [app_python_mvc.models.model] INFO: trame envoyé :b'#2\r\n'
+2026-03-12 13:43:54,504 [uart_spy] INFO: Arrêt application (Ctrl+C).
+2026-03-12 13:43:56,512 [uart_spy] INFO: Démarrage application (port=/dev/ttyACM1, baud=460800)
+2026-03-12 13:43:56,515 [app_python_mvc.models.model] INFO: trame envoyé :b'#P\r\n'
+2026-03-12 13:44:01,226 [app_python_mvc.controler] INFO: commande = start
+2026-03-12 13:44:01,226 [app_python_mvc.process_commands] INFO: trame START envoyée : b'#1\r\n'
+2026-03-12 13:44:01,227 [app_python_mvc.models.model] INFO: trame envoyé :b'#1\r\n'
+2026-03-12 13:44:10,842 [app_python_mvc.models.model] INFO: trame envoyé :b'#2\r\n'
+2026-03-12 13:44:10,846 [uart_spy] INFO: Arrêt application (Ctrl+C).
+2026-03-12 13:44:16,459 [uart_spy] INFO: Démarrage application (port=/dev/ttyACM0, baud=460800)
+2026-03-12 13:44:16,460 [app_python_mvc.models.model] INFO: trame envoyé :b'#P\r\n'
+2026-03-12 13:44:16,460 [app_python_mvc.models.listener] INFO: réponse commande : cmd=b'P' success=True
+2026-03-12 13:44:16,460 [app_python_mvc.process_commands] INFO: trame SET envoyée : b'#3g8N1E3E3\r\n'
+2026-03-12 13:44:16,461 [app_python_mvc.models.model] INFO: trame envoyé :b'#3g8N1E3E3\r\n'
+2026-03-12 13:44:16,461 [app_python_mvc.models.listener] INFO: réponse commande : cmd=b'3' success=True
+2026-03-12 13:44:26,121 [app_python_mvc.controler] INFO: commande = start
+2026-03-12 13:44:26,121 [app_python_mvc.process_commands] INFO: trame START envoyée : b'#1\r\n'
+2026-03-12 13:44:26,121 [app_python_mvc.models.model] INFO: trame envoyé :b'#1\r\n'
+2026-03-12 13:44:26,121 [app_python_mvc.models.listener] INFO: réponse commande : cmd=b'1' success=True
+2026-03-12 13:44:45,620 [app_python_mvc.controler] INFO: commande = stop
+2026-03-12 13:44:45,620 [app_python_mvc.process_commands] INFO: trame STOP envoyée : b'#2\r\n'
+2026-03-12 13:44:45,621 [app_python_mvc.models.listener] INFO: réponse commande : cmd=b'2' success=True
+2026-03-12 13:44:45,621 [app_python_mvc.models.model] INFO: trame envoyé :b'#2\r\n'
+2026-03-12 13:44:57,130 [app_python_mvc.process_commands] INFO: trame SET envoyée : b'#3g8N1E1E2\r\n'
+2026-03-12 13:44:57,130 [app_python_mvc.models.model] INFO: trame envoyé :b'#3g8N1E1E2\r\n'
+2026-03-12 13:44:57,131 [app_python_mvc.models.listener] INFO: réponse commande : cmd=b'3' success=True
+2026-03-12 13:45:01,162 [app_python_mvc.controler] INFO: commande = start
+2026-03-12 13:45:01,162 [app_python_mvc.process_commands] INFO: trame START envoyée : b'#1\r\n'
+2026-03-12 13:45:01,162 [app_python_mvc.models.model] INFO: trame envoyé :b'#1\r\n'
+2026-03-12 13:45:01,163 [app_python_mvc.models.listener] INFO: réponse commande : cmd=b'1' success=True
+2026-03-12 13:45:15,657 [app_python_mvc.controler] INFO: commande = stop
+2026-03-12 13:45:15,658 [app_python_mvc.process_commands] INFO: trame STOP envoyée : b'#2\r\n'
+2026-03-12 13:45:15,658 [app_python_mvc.models.model] INFO: trame envoyé :b'#2\r\n'
+2026-03-12 13:45:15,659 [app_python_mvc.models.listener] INFO: réponse commande : cmd=b'2' success=True

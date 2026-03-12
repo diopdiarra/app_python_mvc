@@ -188,8 +188,6 @@ class AppControler:
             None
         """
 
-        logger.info(f"commande recupéré ")
-
         command = user_command.strip()
             
         if command == START:
@@ -207,7 +205,7 @@ class AppControler:
             dump_log_to_file(lambda msg, seconds=3.0: set_message(self._view, msg, seconds))
 
         elif command == "help":
-            set_message(self._view, "commandes disponibles: start, stop et set {usage : set 'baud' 'nombre_de_bit' 'parité' 'bit_de_stop'}", seconds=15)
+          set_message(self._view, "Commandes : start, stop, set — Usage : set 'baud' [bits] [parité] [stop] [fin_uart1] [fin_uart2]", seconds=20)
 
         elif command in ("exit", "quit"):
             self._model.send_frame(build_frame(CMD_STOP))
